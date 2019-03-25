@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "734174887714",
+    "firebase_url": "https://moviitformulario.firebaseio.com",
+    "project_id": "moviitformulario",
+    "storage_bucket": "moviitformulario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734174887714:android:5a89bd3a30576a51",
+        "android_client_info": {
+          "package_name": "m.google.moviitformularioskotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734174887714-lcords6dodupsul631airdl4c7f5b63b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "m.google.moviitformularioskotlin",
+            "certificate_hash": "460d0aede098046bada766a540bb2628c198cc65"
+          }
+        },
+        {
+          "client_id": "734174887714-ha78tkvun6ijnshfgvec6oet9henjh47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1vkEkKae2RqlscgyRCXnFXsOS1Lsh_u0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734174887714-ha78tkvun6ijnshfgvec6oet9henjh47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

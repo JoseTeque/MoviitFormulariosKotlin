@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MoviitFormulariosKotlin</string>
+    <string name="BtnDetectar">Detectar</string>
+    <string name="Name">Name</string>
+    <string name="Date">Date</string>
+    <string name="txtFormulario">Formulario:</string>
+    <string name="edtxNamehint">Name</string>
+    <string name="edtxEmailhint">Email</string>
+    <string name="edtxPhonehint">Phone</string>
+    <string name="txtCodigoQr">Codigo QR:</string>
+    <string name="NameQR">Name :</string>
+    <string name="vacio"/>
+    <string name="EmailQR">Email :</string>
+    <string name="AddressQr">Address :</string>
+    <string name="btnGuardar">Guardar</string>
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+>
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/IDappBarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/IdImage"
+               android:layout_width="130dp"
+               android:layout_height="130dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="40dp"
+               android:src="@drawable/icono_moviit"
+       />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".FormularioActivity">
+
+        <TextView
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|start"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/txtFormulario"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/IdEdtxName"
+                android:hint="@string/edtxNamehint"
+                android:inputType="text"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+                android:layout_marginTop="5dp"
+        />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/IdEdtxEmail"
+                android:hint="@string/edtxEmailhint"
+                android:inputType="text"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+        />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/IdEdtxPhone"
+                android:hint="@string/edtxPhonehint"
+                android:inputType="phone"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+        />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical|start"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:text="@string/txtCodigoQr"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                />
+
+                <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/Id_fabFormu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="150dp"
+                        app:srcCompat="@drawable/codigo_qr"
+                        tools:ignore="VectorDrawableCompat"
+                />
+
+
+            </LinearLayout>
+
+          <LinearLayout
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+              <TextView
+                      android:layout_marginStart="10dp"
+                      android:gravity="center_vertical|start"
+                      android:layout_marginTop="5dp"
+                      android:textAllCaps="true"
+                      android:textStyle="italic"
+                      android:text="@string/NameQR"
+                      android:textSize="15sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+              />
+
+              <TextView
+                      android:id="@+id/IdTxtNameQr"
+                      android:layout_marginStart="10dp"
+                      android:gravity="center_vertical|start"
+                      android:layout_marginTop="5dp"
+                      android:textAllCaps="true"
+                      android:textStyle="italic"
+                      android:text="@string/vacio"
+                      android:textSize="15sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+              />
+
+          </LinearLayout>
+
+           <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+               <TextView
+                       android:layout_marginStart="10dp"
+                       android:gravity="center_vertical|start"
+                       android:layout_marginTop="5dp"
+                       android:textAllCaps="true"
+                       android:textStyle="italic"
+                       android:text="@string/EmailQR"
+                       android:textSize="15sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+               />
+
+               <TextView
+                       android:id="@+id/IdTxtEmailQr"
+                       android:layout_marginStart="10dp"
+                       android:gravity="center_vertical|start"
+                       android:layout_marginTop="5dp"
+                       android:textAllCaps="true"
+                       android:textStyle="italic"
+                       android:text=""
+                       android:textSize="15sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+               />
+
+           </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical|start"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="true"
+                        android:textStyle="italic"
+                        android:text="@string/AddressQr"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                />
+
+                <TextView
+                        android:id="@+id/IdTxtAddresQr"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical|start"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="true"
+                        android:textStyle="normal"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <info.hoang8f.widget.FButton
+                android:id="@+id/Id_Btn_GUARDAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/btnGuardar"
+                app:cornerRadius="4dp"
+                android:layout_gravity="bottom"
+                app:fButtonColor="@color/colorPrimary"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>
