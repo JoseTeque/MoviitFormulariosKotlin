@@ -95,7 +95,7 @@ class CodigoQRActivity : AppCompatActivity() {
                 FirebaseVisionBarcode.TYPE_TEXT -> {
                   val alertDialog = AlertDialog.Builder(this)
                     alertDialog.setMessage(rawValue)
-                    alertDialog.setPositiveButton("OK") { dialog, which->dialog.dismiss()}
+                    alertDialog.setPositiveButton("OK") { alerDilog, which-> alerDilog.dismiss()}
                     val dialog= alertDialog.create()
                     dialog.show()
                 }
@@ -134,16 +134,6 @@ class CodigoQRActivity : AppCompatActivity() {
                     dialog.show()
                 }
 
-                FirebaseVisionBarcode.TYPE_PRODUCT ->{
-
-
-                    val alertDialog = AlertDialog.Builder(this)
-                    alertDialog.setMessage(rawValue)
-                    alertDialog.setPositiveButton("OK") { dialog, which->dialog.dismiss()}
-                    val dialog= alertDialog.create()
-                    dialog.show()
-
-                }
             }
         }
 

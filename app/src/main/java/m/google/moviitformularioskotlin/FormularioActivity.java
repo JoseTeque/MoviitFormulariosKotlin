@@ -196,8 +196,6 @@ public class FormularioActivity extends AppCompatActivity {
 
             mProgress.show();
 
-
-
               Log.d("FormularioActivity", "Camara okk");
 
           final StorageReference filepath= reference.child("Photos").child(Objects.requireNonNull(photoURI.getLastPathSegment()));
